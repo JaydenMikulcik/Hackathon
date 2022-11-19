@@ -236,7 +236,7 @@ class Obstacle(pygame.sprite.Sprite):
 
         pygame.sprite.Sprite.__init__(self)
         self.image = pygame.image.load('etc/fatFood.jpg').convert_alpha()
-        self.image = pygame.transform.scale(self.image, (50, 50))
+        self.image = pygame.transform.scale(self.image, size)
         #self.image = pygame.Surface(size)
         #self.image.fill(obstacle_color)
         self.rect = self.image.get_rect()
