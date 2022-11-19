@@ -319,7 +319,7 @@ pling4 = pygame.mixer.Sound("etc/pling4.wav")
 
 screen = pygame.display.set_mode((screen_width, screen_height), 0, 32)
 
-spielfigur_jump = pygame.image.load('etc/spielfigur_jump.png').convert_alpha()
+spielfigur_jump = pygame.image.load('etc/Ghandi2.jpg').convert_alpha()
 spielfigur_jump_goodie = pygame.image.load('etc/Ghandi2.jpg').convert_alpha()
 spielfigur_1 = pygame.image.load('etc/Ghandi2.jpg').convert_alpha()
 spielfigur_1_goodie = pygame.image.load('etc/Ghandi2.jpg').convert_alpha()
