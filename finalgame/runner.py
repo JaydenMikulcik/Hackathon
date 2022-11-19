@@ -1,12 +1,16 @@
 import pygame
 from pygame.locals import *
 from random import randint
+import random
 
 #try:
 #    import pygame_sdl2
 #    pygame_sdl2.import_as_pygame()
 #except ImportError:
 #    pass
+
+
+OBSTACLES = ["etc/WAR.jpg", 'etc/fatFood.jpg']
 
 
 class Spielfigur(pygame.sprite.Sprite):
@@ -235,7 +239,8 @@ class Obstacle(pygame.sprite.Sprite):
         global obstacle_color
 
         pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.image.load('etc/fatFood.jpg').convert_alpha()
+        obs = random.choice(OBSTACLES)
+        self.image = pygame.image.load(obs).convert_alpha()
         self.image = pygame.transform.scale(self.image, size)
         #self.image = pygame.Surface(size)
         #self.image.fill(obstacle_color)
